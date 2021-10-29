@@ -10,7 +10,7 @@ from io import BytesIO
 
 views = Blueprint("views", __name__)
 
-@views.route("/")
+@views.route("/",methods=["POST","GET"])
 def ingreso():
     return render_template("ingreso.html")
 
